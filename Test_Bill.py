@@ -4,26 +4,28 @@ import unittest
 class Test_Bill(unittest.TestCase):
     
       def test_product_total_controller(self):
-        self.assertEqual(4,4)
+       print(total_bill)
+        self.total_bill = Product('cosmetics_price', 'grocery_price', dry_food_price)
 
       def test_bill_area_controllers(self):
-        self.assertEqual(6,6)
+        print(Generate_bill)
 
       def test_invoice_controller(self):
-        self.assertEqual(4,4)  
+        print("Customer deatails are must")
+        self.save_bill_controller=  {str(self.total_bill + (self.total_bill*self.vat))} 
 
       def test_clear_data_controller(self):
-        self.assertEqual(3,3) 
+        print(self.all_product) 
 
       def test_find_bill_controller(self):
-        self.assertEqual(2,2)
-
+        print(customer_invoice)
+       
       def test_exit_app(self):
-        self.assertEqual(10,10)
+        print("Exit", "Do You reall want to exit?")
 
       def test_save_bill_controller(self):
-        self.assertEqual(12,12)              
-
+        print("save Bill,", "DO you want to save the bill")
+        op=messagebox.showinfo("Saved", f"Invoice No:{self.bill_no.get()} Saved Suffessfully")
 
 if __name__ == '__main__':
   unittest.main()        
